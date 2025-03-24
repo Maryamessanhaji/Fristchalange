@@ -1,12 +1,16 @@
 body {
     background-color: hsl(202, 86%, 94%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+    .containers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
     .container {
         display: flex;
-        width: 80vw;
+         width: 80vw;
         height: 80vh;
         border-radius: 15px;
         background-color: hsl(0, 0%, 100%);
@@ -33,72 +37,45 @@ body {
             form {
                 display: flex;
                 flex-direction: column;
-                /* text-align: center; */
-                margin: 10px;
-
-
+                margin-left: 64px;
+                margin-right: 64px;
+                gap: 15px;
 
                 label {
                     color: hsl(200, 24%, 40%);
-                    margin-bottom: 10px;
-
                 }
 
                 .input-icons {
-                  
                     display: flex;
                     align-items: center;
-                    padding: 5px;
                     border-radius: 5px;
                     border: 1px solid hsl(200, 24%, 40%);
-                    
-
-
-
                 }
 
                 .input-icons span {
                     /* position: absolute; */
                     background-color: hsl(203, 41%, 72%);
-
+                    border-radius: 5px 0px 0px 5px;
                 }
-
                 .icon {
-                    padding: 10px ;
-
+                    padding: 10px;
                 }
-
                 .input-field {
                     width: 80%;
                     padding: 10px;
                     border: none;
-                    /* border: 1px solid hsl(200, 24%, 40%); */
-
-
                 }
-
                 .rate {
                     display: flex;
-                    gap: 20px;
+                    gap: 15px;
                 }
-
                 .input-group {
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
+                    /* gap: 10px; */
                 }
 
-                .input-icons i {
-                    position: absolute;
-                    background-color: hsl(61, 70%, 52%);
-                    border-radius: 20px;
-                    color: hsl(202, 55%, 16%);
-
-
-                }
-
-                .icon-rate {}
-
+               
                 .input-radio {
                     display: flex;
                     justify-content: flex-start;
@@ -106,33 +83,57 @@ body {
                     gap: 10px;
                     padding: 3px;
                     border: 1px solid hsl(200, 24%, 40%);
-
+                    border-radius: 5px;
                 }
-
+                .input-radio:hover {
+                    cursor: pointer;
+                    border: 1px solid hsl(61, 70%, 52%);
+                }
+                
+                /* .input-icons:active {
+                    background-color: hsl(61, 70%, 52%);
+                } */
+               
                 .input-radio-group {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
-                    width: 80%;
-
+                    width: 100%;
                 }
-
+               #demo{
+                color: red;
+                padding: 0px;
+                margin: 0px;
+               }
+                   
                 .button {
                     width: 70%;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px; 
                     background-color: hsl(61, 70%, 52%);
-                    border: 1px solid hsl(61, 70%, 52%);
-                    border-radius: 20px;
-                    padding: 10px 40px;
-                    text-align: center;
                     color: hsl(202, 55%, 16%);
+                    border: none;
+                    padding: 12px 20px;
+                    border-radius: 20px;
                 }
 
+                
+                .button:hover {
+                    background-color: hsl(61, 70%, 69%);
+                    cursor: pointer;
+
+                }
+                
+                input:hover{
+                    cursor: pointer;
+                } 
+                
+          
             }
         }
-
         .right {
             border-radius: 0px 20px;
-            border: 1px solid blue;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -140,12 +141,76 @@ body {
             color: hsl(0, 0%, 100%);
             background-color: hsl(202, 55%, 16%);
             width: 40vw;
-
             p {
                 text-align: center;
                 color: hsl(200, 24%, 40%);
             }
 
         }
+        .right1{
+            border-radius: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            color: hsl(0, 0%, 100%);
+            background-color: hsl(202, 55%, 16%);
+            width: 40vw;
+            padding-left: 25px;
+            padding-right: 25px;
+            h1{
+                color:  hsl(61, 70%, 52%);
+                font-size: 30px;
+            }
+            p{
+                color: hsl(200, 24%, 40%);
+               }
+            .card{
+                border-top: 3px solid hsl(61, 70%, 52%);
+                border-radius: 25px;
+                background-color: hsl(204, 48%, 14%);
+               padding: 30px;
+              
+            }
+        }
     }
 }
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+    
+            .left {
+            
+    
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+                form {
+                   
+    
+                   
+
+                   
+                    .rate {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                   
+
+                       
+                 
+    
+                   
+                    
+              
+                }
+            }
+         
+        }
+    }
+  }
