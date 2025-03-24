@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
 
@@ -16,7 +16,7 @@
     .attribution {
       font-size: 11px;
       text-align: center;
-     
+
     }
 
     .attribution a {
@@ -37,28 +37,52 @@
       </div>
       <form action="">
         <label for=""> Mortgage Amount
-        </label> 
-        <input type="text" name="" id="">
-        <!-- <div>
-          <label for=""> Mortgage Term
-
-          </label>
-          <input type="text" name="" id="">
-           <label for=""> Interest Rate
-          </label>
-          <input type="text" name="" id="">
-        </div> -->
-        <label for=""> Mortgage Type
         </label>
-        <input type="radio" name="" id="" value="  Repayment
-    ">
+        <div class="input-icons">
+          <span class=" icon">£</span>
+          <input class="input-field" type="text">
+        </div>
+
+        <div class="rate">
+          <div class="input-group">
+            <label for=""> Mortgage Term
+            </label>
+            <div class="input-icons">
+              <input class="input-field" type="text">
+              <span class=" icon" >years</span>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for=""> Interest Rate
+            </label>
+            <div class="input-icons">
+              <input class="input-field" type="text">
+              <span class="icon" >%</span>
+            </div>
+          </div>
+
+        </div>
+<div class="input-radio-group">
+
+  <label for=""> Mortgage Type
+  </label>
+  <div class="input-radio">
+
+    <input type="radio" name="Repayment" id="" value=" Repayment">
     <label for=""> Repayment
     </label>
-        <input type="radio" name="" id="" value="    Interest Only
-    ">
-    <label for="">  Interest Only
-    </label>
-        <button> Calculate Repayments</button>
+  </div>
+        <div class="input-radio">
+          <input type="radio" name="" id="" value="Interest Only">
+          <label for=""> Interest Only
+          </label>
+        </div>
+      </div>
+
+        <div class="input-icons ">
+          <i class="fa fa-calculator icon" aria-hidden="true"></i>
+          <input class=" button" type="button" value="Calculate Repayments">
+        </div>
 
       </form>
     </section>
