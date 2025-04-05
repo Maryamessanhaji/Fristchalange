@@ -1,216 +1,230 @@
 body {
     background-color: hsl(202, 86%, 94%);
+    margin: 0;
+    font-family: sans-serif;
+   
+}
 
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container {
+    width: 80vw;
+    height: 80vh;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.left {
+    width: 100%;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.right {
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(202, 55%, 16%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right1 {
+    width: 100%;
+    border-radius: 15px;
+    background-color: hsl(202, 55%, 16%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left Section Styles */
+
+
+.left form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label,
+a {
+    color: hsl(200, 24%, 40%);
+}
+
+.input-icons {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid hsl(200, 24%, 40%);
+    overflow: hidden;
+}
+
+.input-icons span {
+    background-color: hsl(203, 41%, 72%);
+    padding: 10px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid hsl(200, 24%, 40%);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input-radio:hover {
+    cursor: pointer;
+    border-color: hsl(61, 70%, 52%);
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: hsl(61, 70%, 69%);
+    cursor: pointer;
+}
+
+#demo {
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+/* Right Section Styles */
+.right1 {
+    background-color: hsl(202, 55%, 16%);
+    color: white;
+}
+
+.right1 h1 {
+    color: hsl(61, 70%, 52%);
+    font-size: 30px;
+}
+
+.right1 p {
+    color: hsl(200, 24%, 40%);
+}
+
+.right h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.right p {
+    color: hsl(200, 24%, 40%);
+    text-align: center;
+}
+
+.card {
+    border-top: 3px solid hsl(61, 70%, 52%);
+    border-radius: 25px;
+    background-color: hsl(204, 48%, 14%);
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+/* ========== Desktop Styles ========== */
+@media only screen and (min-width: 768px) {
     .containers {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-
     }
+
     .container {
-        display: flex;
-         width: 80vw;
+        flex-direction: row;
+        width: 80vw;
         height: 80vh;
-        border-radius: 15px;
-        background-color: hsl(0, 0%, 100%);
+    }
 
-        .left {
-            display: flex;
-            flex-direction: column;
-            width: 40vw;
+    .left,
+    .right1,.right {
+        width: 50%;
+        height: 100%;
+    }
 
-            .title {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+    .right1 {
+        padding: 40px;
+    }
 
-                h2 {
-                    color: hsl(202, 55%, 16%);
-                }
+    .left form {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 
-                a {
-                    color: hsl(200, 24%, 40%);
-                }
-            }
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-            form {
-                display: flex;
-                flex-direction: column;
-                margin-left: 64px;
-                margin-right: 64px;
-                gap: 15px;
+    .rate {
+        flex-direction: row;
+    }
 
-                label {
-                    color: hsl(200, 24%, 40%);
-                }
-
-                .input-icons {
-                    display: flex;
-                    align-items: center;
-                    border-radius: 5px;
-                    border: 1px solid hsl(200, 24%, 40%);
-                }
-
-                .input-icons span {
-                    /* position: absolute; */
-                    background-color: hsl(203, 41%, 72%);
-                    border-radius: 5px 0px 0px 5px;
-                }
-                .icon {
-                    padding: 10px;
-                }
-                .input-field {
-                    width: 80%;
-                    padding: 10px;
-                    border: none;
-                }
-                .rate {
-                    display: flex;
-                    gap: 15px;
-                }
-                .input-group {
-                    display: flex;
-                    flex-direction: column;
-                    /* gap: 10px; */
-                }
-
-               
-                .input-radio {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: start;
-                    gap: 10px;
-                    padding: 3px;
-                    border: 1px solid hsl(200, 24%, 40%);
-                    border-radius: 5px;
-                }
-                .input-radio:hover {
-                    cursor: pointer;
-                    border: 1px solid hsl(61, 70%, 52%);
-                }
-                
-                /* .input-icons:active {
-                    background-color: hsl(61, 70%, 52%);
-                } */
-               
-                .input-radio-group {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    width: 100%;
-                }
-               #demo{
-                color: red;
-                padding: 0px;
-                margin: 0px;
-               }
-                   
-                .button {
-                    width: 70%;
-                    display: flex;
-                    align-items: center;
-                    gap: 10px; 
-                    background-color: hsl(61, 70%, 52%);
-                    color: hsl(202, 55%, 16%);
-                    border: none;
-                    padding: 12px 20px;
-                    border-radius: 20px;
-                }
-
-                
-                .button:hover {
-                    background-color: hsl(61, 70%, 69%);
-                    cursor: pointer;
-
-                }
-                
-                input:hover{
-                    cursor: pointer;
-                } 
-                
-          
-            }
-        }
-        .right {
-            border-radius: 0px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: hsl(0, 0%, 100%);
-            background-color: hsl(202, 55%, 16%);
-            width: 40vw;
-            p {
-                text-align: center;
-                color: hsl(200, 24%, 40%);
-            }
-
-        }
-        .right1{
-            border-radius: 0px 20px;
-            display: flex;
-            flex-direction: column;
-            color: hsl(0, 0%, 100%);
-            background-color: hsl(202, 55%, 16%);
-            width: 40vw;
-            padding-left: 25px;
-            padding-right: 25px;
-            h1{
-                color:  hsl(61, 70%, 52%);
-                font-size: 30px;
-            }
-            p{
-                color: hsl(200, 24%, 40%);
-               }
-            .card{
-                border-top: 3px solid hsl(61, 70%, 52%);
-                border-radius: 25px;
-                background-color: hsl(204, 48%, 14%);
-               padding: 30px;
-              
-            }
-        }
+    .button {
+        width: 70%;
     }
 }
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: red;
-    
-        
-        .container {
-            display: flex;
-            flex-direction: column;
-    
-            .left {
-            
-    
-                .title {
-                    display: flex;
-                    flex-direction: column;
-                }
-    
-                form {
-                   
-    
-                   
-
-                   
-                    .rate {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                   
-
-                       
-                 
-    
-                   
-                    
-              
-                }
-            }
-         
-        }
-    }
-  }
