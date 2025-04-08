@@ -39,6 +39,7 @@ function error() {
     errorAmount.innerText = "";
     errorTerm.innerText = "";
     errorRate.innerText = "";
+    errorRadio.innerText = "";
   
     if (inputField.value.trim() === "") {
       inputField.required = true;
@@ -73,6 +74,10 @@ function error() {
         calculateMortgage(); // run the calculator if form is valid
       }
     return false; // Only submits the form if everything is valid
+  }
+  function clearAll(){
+   let inputs = document.getElementsByClassName("inputs")
+    
   }
   
 

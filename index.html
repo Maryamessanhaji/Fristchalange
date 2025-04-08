@@ -37,13 +37,13 @@
         <section class="left">
           <div class="title">
             <h2>Mortgage Calculator</h2>
-            <a href="#"> Clear All </a>
+            <a href="#" id="myLink"  onclick="clearAll()"> Clear All </a>
           </div>
           <form action="" onsubmit="return error()">
             <label for="Mortgage_Amount"> Mortgage Amount </label>
             <div class="input-icons">
               <span class="icon">£</span>
-              <input class="input-field" type="number" id="Mortgage_Amount"/>
+              <input class="input-field inputs" type="number" id="Mortgage_Amount"/>
             </div>
             <p class="demo" id="errorMortgageAmount"></p>
 
@@ -51,7 +51,7 @@
               <div class="input-group">
                 <label for="Mortgage_Term"> Mortgage Term </label>
                 <div class="input-icons">
-                  <input class="input-field" type="number" id="Mortgage_Term" />
+                  <input class="input-field inputs" type="number" id="Mortgage_Term" />
                   <span class="icon" style="border-radius: 0px 5px 5px 0px"
                     >years</span
                   >
@@ -61,7 +61,7 @@
               <div class="input-group">
                 <label for="Interest_Rate"> Interest Rate </label>
                 <div class="input-icons">
-                  <input class="input-field" type="number" id="Interest_Rate" />
+                  <input class="input-field inputs" type="number" id="Interest_Rate" />
                   <span class="icon" style="border-radius: 0px 5px 5px 0px"
                     >%</span
                   >
@@ -72,12 +72,12 @@
             <div class="input-radio-group">
               <label > Mortgage Type </label>
               <div class="input-radio">
-                <input type="radio" name="radioButtons"  value=" Repayment" id="repayment"/>
+                <input type="radio" name="radioButtons" class="inputs" value=" Repayment" id="repayment"/>
                 <label for="repayment"> Repayment </label>
               </div>
              
               <div class="input-radio">
-                <input type="radio" name="radioButtons"  value="Interest Only" id="interest_Only"/>
+                <input type="radio" name="radioButtons" class="inputs"  value="Interest Only" id="interest_Only"/>
                 <label for="interest_Only"> Interest Only </label>
               </div>
             </div>
